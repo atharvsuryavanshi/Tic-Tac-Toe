@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIC-TAC-TOE</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-dark permanent-marker-regular" style="font-family: Comic Sans MS;">
+    <div>
+        <h1 class="text-center fw-bolder mt-3 text-light">TIC-TAC-TOE</h1>
+        <div class="d-inline gap-2">
+            <div class="d-flex justify-content-center">
+                <h3 class="text-light me-3">
+                    <div class="visually-hidden" id="div-score-board">
+                        <span class="text-primary fw-bolder">O</span>
+                        <span id="span-score-o"></span>
+                        <span class="text-danger fw-bolder">X</span>
+                        <span id="span-score-x"></span>
+                    </div>
+                </h3>
+                <button type="button" class="btn btn-sm btn-light fw-bolder visually-hidden ms-3"
+                    id="button-restart-game" onclick="restartGame()">Restart</button>
+            </div>
+        </div>
+        <hr class="border">
+        <div class="d-flex justify-content-center mb-5">
+            <div class="" style="width: 75vh; height: 75vh; min-width: 210px; min-height: 210px;">
+                <div class="row border-bottom border-5">
+                    <div class="col border-end border-5 div-cell" data-cell-id="div-cell-a0"
+                        style="height: 25vh; min-height: 70px;"></div>
+                    <div class="col border-end border-5 div-cell" data-cell-id="div-cell-a1"
+                        style="height: 25vh; min-height: 70px;"></div>
+                    <div class="col div-cell" data-cell-id="div-cell-a2" style="height: 25vh;"></div>
+                </div>
+                <div class="row border-bottom border-5">
+                    <div class="col border-end border-5 div-cell" data-cell-id="div-cell-b0"
+                        style="height: 25vh; min-height: 70px;"></div>
+                    <div class="col border-end border-5 div-cell" data-cell-id="div-cell-b1"
+                        style="height: 25vh; min-height: 70px;"></div>
+                    <div class="col div-cell" data-cell-id="div-cell-b2" style="height: 25vh;"></div>
+                </div>
+                <div class="row">
+                    <div class="col border-end border-5 div-cell" data-cell-id="div-cell-c0"
+                        style="height: 25vh; min-height: 70px;"></div>
+                    <div class="col border-end border-5 div-cell" data-cell-id="div-cell-c1"
+                        style="height: 25vh; min-height: 70px;"></div>
+                    <div class="col div-cell" data-cell-id="div-cell-c2" style="height: 25vh;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+        integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
